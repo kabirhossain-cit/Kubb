@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* ====================== preloader =========================== */
+/* .preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(124, 119, 119);
+    z-index: 9999999;
+    
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.loader h2{
+    color: white;
+    text-transform: uppercase;
+} */
+
+/*===================== navbar goes here ==========================*/
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.44);
+
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.logo{
+    width: 270px;
+    float: left;
+}
+.logo img{
+    padding-top:33px;
+    
+}
+
+.menu{
+    width: 900px;
+    float: left;
+    text-align: right;
+}
+
+.menu ul li{
+    display: inline-block;
+
+}
+.menu ul li a{
+    padding-left: 45px;
+    line-height: 90px;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    transition:all linear .3s;
+}
+.menu ul li a:hover{
+    color: #28b8d8;
+}
+/*===================== banner ==========================*/
+
+#banner{
+    background: url(../images/banner.jpg)center no-repeat;
+    background-size: cover;
+    padding-top: 332px;
+    padding-bottom: 252px;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 21px;
+}
+.banner-text h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+     
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 21px;
+}
+.banner-text p{
+    text-transform:none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+}
+/*===================== intro part goes here ==========================*/
+#intro{
+    padding-top: 80px;
+    padding-bottom: 78px;
+}
+.intro-text{
+    text-align: center;
+}
+.intro-text h2{
+    padding-bottom: 27px;
+    color:#444444;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.intro-text p{
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+/*===================== services goes here ==========================*/
+#service{
+    padding-bottom: 84px;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.heading h2{
+    color: #444444;
+    font-size:18px ;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.service-item{
+    width: 370px;
+    border: 1px solid #e3e3e3;
+    padding:15px;
+    text-align: center;
+    float: left;
+}
+.mx-30{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.service-item h3{
+    padding-top: 16px;
+    font-size: 17px;
+    color: #444;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;  
+
+}
+.service-item p{
+    padding-top: 12px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+}
+/*===================== gallery goes here ==========================*/
+#gallery{
+    background-color: #2c2c2c;
+}
+#gallery .heading{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+#gallery .heading h2{
+    color: #d5d5d5;
+    text-transform:uppercase;
+    position: relative;
+    display: inline-block;
+}
+#gallery .heading h2::before{
+     position: absolute;
+     content: '';
+     top: 50%;
+     left:-115px;
+     height: 1px;
+     width: 100px;
+     background-color: #535353;
+}
+#gallery .heading h2::after{
+     position: absolute;
+     content: '';
+     top: 50%;
+     right:-115px;
+     height: 1px;
+     width: 100px;
+     background-color: #535353;
+}
+.gal-item{
+    width: 25%;
+    float: left;
+    overflow:hidden;
+}
+.gal-item img{
+    transition: all linear .3s;
+}
+.gal-item:hover img{
+    transform: scale(1.1);
+}
+.gal-btn{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.gal-btn a{
+    color: #a6a6a6;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #797979;
+    padding:16px 22px ;
+    transition: all linear .3s;
+}
+.gal-btn a:hover{
+    background-color: #fff;
+    color: black;
+}
+.gal-btn i{
+    padding-right: 5px;
+}
+/*===================== journer goes here ==========================*/
+#journal{
+    padding-top: 50px;
+}
+#journal .heading h2{
+    color: #444444;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    position:relative;
+    display: inline-block;
+}
+#journal .heading h2::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left:-115px;
+    height: 1px;
+    width: 100px;
+    background-color: #d9d9d9;
+}
+#journal .heading h2::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right:-115px;
+    height: 1px;
+    width: 100px;
+    background-color: #d9d9d9;
+}
+.journal-item {
+    width: 370px;
+    border: 1px solid #e3e3e3;
+    float: left;
+  }
+  .journal-top {
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 24px;
+  }
+  .journal-top h3 {
+    font-size: 16px;
+    color: #444;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+    padding-bottom: 13px;
+  }
+  .journal-top p {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    text-transform: capitalize;
+  }
+  .journal-btm {
+    padding: 25px;
+  }
+  .journal-btm  p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    line-height: 22px;
+    padding-bottom: 25px;
+  }
+  .journal-btm span {
+    float: right;
+    font-size: 11px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+  }
+  .journal-btm a {
+    font-size: 11px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    color:#999;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #28b8d8;
+  }
+  /*===================== little goes here ==========================*/
+  #little {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.little-left {
+    width: 570px;
+    margin-right: 30px;
+    float: left;
+}
+.little-right {
+    width: 570px;
+    float: left;
+}
+.little-left .heading {
+    text-align: left;
+}
+.little-left .heading h2{
+    position: relative;
+    display: inline-block;
+}
+.little-left .heading h2::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    right: -115px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.little-left-img {
+    width: 196px;
+    margin-right: 27px;
+    float: left;
+    filter: grayscale(100%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.little-left-img:hover{
+    filter: grayscale(0);
+}
+.little-left-text{
+    width: 347px;
+    float: left;
+}
+.little-left-text h5 {
+    font-size: 18px;
+    color: #666;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    line-height: 28px;
+    padding-bottom: 11px;
+    margin-top: -5px;
+}
+.little-left-text p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    line-height: 24px;
+}
+.little-right .heading {
+    text-align: left;
+}
+.little-right .heading h2{
+    position: relative;
+    display: inline-block;
+}
+.little-right .heading h2::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    right: -115px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.little-icon {
+    width: 55px;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+}
+.little-service-text {
+    width: 500px;
+    float: left;
+}
+.little-service-text h3 {
+    font-size: 17px;
+    color: #444;
+    font-weight: 700;
+    text-transform:capitalize;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 9px;
+}
+.little-service-text p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    line-height: 22px;
+}
+.my-27 {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+  /*===================== footer goes here ==========================*/
+  footer {
+    background-color: #373737;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+.footer-item {
+    width: 270px;
+    float: left;
+}
+.footer-item h3 {
+    color: #f0f0f0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 13px;
+}
+.footer-item p {
+    color: #cacaca;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height:24px;
+    font-weight: 400;
+}
+.address {
+    padding-top: 16px;
+}
+.address-icon {
+    width: 22px;
+    float: left;
+}
+.address-icon i {
+    color: #fff;
+    font-size: 12px;
+}
+.address-text {
+    width: 248px;
+    float: left;
+}
+.extra1 {
+    margin-left: 30px;
+}
+.extra1 p {
+    padding-bottom: 12px;
+}
+#reserved{
+    background-color:#333333;
+}
+#reserved p{
+    color: #cacaca;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 45px 0;
+    font-family: 'Roboto',serif;
+}
+/* ======================= about-page goes here ================== */
+#about-page nav{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(5, 62, 87, 0.897);
+}
+#breadcumb{
+    padding: 30px 0;
+    background-color: #28b8d8;
+}
+.breadcumb{
+    text-align: center;
+}
+#about-content{
+    padding-top: 50px;
+}
+#about-content .little-left{
+    width: 100%;
+    margin: 0;
+}
+#about-content .little-left-img{
+    width: 370px;
+    float: left;
+}
+#about-content .little-left-text{
+    width: 770px;
+    float: left;
+}
+#about-content .little-left-text p{
+    line-height: 30px;
+}
+.social{
+    padding-top:15px;
+
+}
+.social i{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(3, 57, 61);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+#counter{
+    padding: 50px 0;
+}
+.counter-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
