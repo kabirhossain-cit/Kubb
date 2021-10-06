@@ -18,7 +18,6 @@ h1,h2,h3,h4,h5,h6,p{
     display: block;
 }
 /* ============================preloader goes here========================== */
-
 .preloader{
     position: fixed;
     height: 100%;
@@ -46,6 +45,11 @@ h1,h2,h3,h4,h5,h6,p{
     50%{transform:translate(160%, 160%)}
     75%{transform:translate(0, 160%)}
   }
+
+
+
+
+  
 nav{
     position: absolute;
     top: 0;
