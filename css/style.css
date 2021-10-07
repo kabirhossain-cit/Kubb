@@ -17,6 +17,27 @@ h1,h2,h3,h4,h5,h6,p{
     clear: both;
     display: block;
 }
+/* ============================back to top goes here========================== */
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.back-to-top i{
+    text-align: center;
+    background-color: teal;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* ============================end goes here========================== */
+
 /* ============================preloader goes here========================== */
 .preloader{
     position: fixed;
@@ -48,7 +69,14 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 
-
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(184, 30, 30, 0.698);
+}
   
 nav{
     position: absolute;
