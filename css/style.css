@@ -22,6 +22,8 @@ h1,h2,h3,h4,h5,h6,p{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    cursor: pointer;
+    display: none;
 }
 .back-to-top i{
     text-align: center;
@@ -67,24 +69,35 @@ h1,h2,h3,h4,h5,h6,p{
     75%{transform:translate(0, 160%)}
   }
 
-
-
 .bg{
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
-    background-color: rgba(184, 30, 30, 0.698);
+    z-index: 99999;
+    background-color:rgba(0, 0, 0, 0.808);
+    transition: all linear .4s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    animation: bg 1s;
 }
-  
+@keyframes bg{
+    from{top:-50px}
+    to{top:0}
+}
 nav{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.44);
-
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .4s;
 }
 .container{
     width: 1170px;
@@ -130,6 +143,7 @@ nav{
     background-size: cover;
     padding-top: 332px;
     padding-bottom: 252px;
+    background-attachment: fixed;
 }
 .banner-text{
     text-align: center;

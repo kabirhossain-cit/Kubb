@@ -5,11 +5,12 @@ $(function(){
         $('.preloader').delay(500).fadeOut(500);
     });
 // // ====================== preloader end ============================
+new WOW().init();
 
 // // ====================== back to top============================
 
     $('.back-to-top').click(function(){
-        $('html, body').animate({scrollTop:0},1200);
+        $('html, body').animate({scrollTop:0},800);
     });
 
     $(window).scroll(function(){
@@ -20,8 +21,11 @@ $(function(){
         else {
             $('.back-to-top').fadeOut(500);
         }
-        if(scrolling > 300){
-            $('.nav').addClass('.bg');
+        if(scrolling > 600){
+            $('.nav').addClass('bg');
+        }
+        else{
+            $('.nav').removeClass('bg');
         }
     });
 });
